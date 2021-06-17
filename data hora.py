@@ -4,5 +4,6 @@ import time
 datetime.now().strftime('%d-%m-%Y %H:%M:%S')
 print(datetime.now().strftime('%d-%m-%Y %H:%M:%S'))
 while True:
-    time.sleep(3)
-    print(datetime.now().strftime('%d-%m-%Y %H:%M:%S'))
+    if datetime.now().strftime('%d-%m-%Y %H:%M:%S')==datetime.now().strftime('%d-%m-%Y %H:%M:00'):
+        print(datetime.now().strftime('%d-%m-%Y %H:%M:%S'))
+        time.sleep(60)
